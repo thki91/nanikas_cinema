@@ -1,5 +1,4 @@
 (function ($) {
-  console.log("ROULETTE")
   var Roulette = function (options) {
     var defaultSettings = {
       maxPlayCount: null,
@@ -173,15 +172,11 @@ var option = {
 }
 
 var count = $('.roulette').children().length;
-debugger;
-console.log("BLA")
-console.log(count);
 
 $('div.roulette').roulette(option);
 
 $('#go').click(function () {
   option.stopImageNumber = (Math.random() * count) >> 0;
-  $('#config').text(JSON.stringify(option))
   $('div.roulette')
     .roulette('option', option)
     .roulette('start');
