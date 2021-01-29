@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nanikas Cinema</title>
+    <link rel="stylesheet" href="styles/font.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="logo">
+    <img src="assets/logo.png" class="logo-img">
+</header>
+<article class="main">
+    <section class="popcorn-gallery">
+        <div class="popcorn">
+            <img src="assets/popcorn_raspberry.png" class="popcorn-img">
+            <p class="popcorn-name">Himbeere</p>
+        </div>
+        <div class="popcorn">
+            <img src="assets/popcorn_chocolate.png" class="popcorn-img">
+            <p class="popcorn-name">Schoko</p>
+        </div>
+        <div class="popcorn">
+            <img src="assets/popcorn_marshmallow.png" class="popcorn-img">
+            <p class="popcorn-name">Marshmallow</p>
+        </div>
+        <div class="popcorn">
+            <img src="assets/pocorn_caramel.png" class="popcorn-img">
+            <p class="popcorn-name">Karamell</p>
+        </div>
+        <div class="popcorn">
+            <img src="assets/popcorn_blueberry.png" class="popcorn-img">
+            <p class="popcorn-name">Heidelbeere</p>
+        </div>
+    </section>
+    <section class="popcorn-picker">
+        <!--        <h2>Config: <span id="config"></span></h2>-->
+        <div class="roulette" style="display:none;">
+            <img src="assets/popcorn_raspberry.png"/>
+            <img src="assets/popcorn_chocolate.png"/>
+            <img src="assets/popcorn_marshmallow.png"/>
+            <img src="assets/pocorn_caramel.png"/>
+            <img src="assets/popcorn_blueberry.png"/>
+        </div>
+        <button class="popcorn-picker-cta" id="go">Whats Your Favorite?</button>
+    </section>
+</article>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="popcorn-picker.js"></script>
+</body>
+</html>

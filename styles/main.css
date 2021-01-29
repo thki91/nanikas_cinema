@@ -1,0 +1,99 @@
+body {
+    background: #1A1F23;
+    color: white;
+    font-family: 'Brandon Grotesque';
+    margin-bottom: 50px;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.logo-img {
+    width: 500px;
+}
+
+.popcorn-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popcorn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.popcorn-name {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.popcorn-img {
+    width: 110px;
+    transition: transform .2s;
+}
+
+.popcorn-img:hover {
+    transform: scale(1.2);
+}
+
+.popcorn-picker {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.popcorn-picker-cta {
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FF0202;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+
+.popcorn-picker-cta:hover {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.roulette img {
+    width: 190px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .logo-img {
+        width: 400px;
+    }
+
+    .popcorn-img {
+        width: 90px;
+    }
+
+    .popcorn-name {
+        font-size: 13px;
+    }
+}
